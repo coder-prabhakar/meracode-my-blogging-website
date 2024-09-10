@@ -1,0 +1,7 @@
+.thinImg img{ width: 100%; }
+table{ border-collapse: collapse;}
+table tr th, table tr td{ padding: 5px 20px; }
+table tr:nth-child(odd){ background-color: #ccc; }
+table tr th{ background-color: #07d7fc !important; color: white; letter-spacing: 1px; }
+.element_explained p { display: grid; grid-template-columns: 90px 1fr; gap: 5px; }
+.lightHr{ margin-bottom: 40px; border-color: #ff00ea6c; }

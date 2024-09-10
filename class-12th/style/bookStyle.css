@@ -1,0 +1,25 @@
+@media screen and (min-width: 750px){
+    aside nav .chapterName{ background-color: #ccc; }
+    aside nav .chapterTopic{ margin-left: 15px; font-size: 99%; background-color: #ececec; }
+}
+@media screen and (max-width: 749px){
+    aside nav .chapterName{ font-weight: bold; background-color: white; color: black; border: 1px solid black;}
+    aside nav .chapterTopic{ font-weight: bold; font-size: 99%; background-color: white; color: rgba(0, 0, 0, 0.356); border: 1px solid #ccc;}
+}
+        /* ul style */
+.style_ul li::before { content: "\2022"; color: #ff00b3; font-weight: bold; font-size: x-large; display: inline-block;  width: 1em; margin-left: -1em; }
+.elem_selec::before { color: #ff00b3; font-size: large; display: inline-block; font-weight: bold;  width: 1.2em; }
+.h3_elem_selec::before { color: #ff00b3; font-size: x-large; display: inline-block;  width: 1.2em; }
+.first::before { content: "1.";}
+.second::before { content: "2.";}
+.third::before { content: "3."}
+.fourth::before { content: "4."}
+
+b{ line-height: 30px; word-spacing: 2px; font-size: large; }
+.btnMrgZero{ margin-bottom: 0px; }
+.topMrgZero{ margin-top: 0px; }
+section{ margin-bottom: 40px; }
+h1,h2,h3,h4{ margin-bottom: -10px; }
+.prome_image_container{ display: flex; justify-content: center; }
+img{ width: 300px; }
+@media screen  and (max-width: 500px){ img { width: 250px; } }

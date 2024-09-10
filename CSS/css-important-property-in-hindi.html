@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS !important Property in Hindi | meracode </title>
+    <meta name="description" content="अगर आपने एक ही element के कोई एक प्रकार के style को एक-से-ज्यादा अलग-अलग जगह style कर दिया है और आप चाहते है की उसमे से कोई एक विशेष style ही उस element पे लागु हो तो आप !important के उपयोग द्वारा यह कर सकते है |"/>
+    <meta name="language" content="Hindi"/>
+    <meta name="author" content="Prabhakar Kumar"/>
+    <link rel="canonical" href="https://www.meracode.in/CSS/css-important-property-in-hindi.html"/>
+
+    <!-- ----- GOOGLE FONTS --------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------ WEBSITE LOGO ( FAVICON.IO ) ------>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!--------- HTML CSS FILE LINK ---------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/allCssStyle.css">
+</head>
+<body>
+
+    <!-------------- HEADER ----------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!---------- SIDE BAR ( NAV ) ----------->
+    <aside>
+        <nav>
+            <a href="css_introduction.html">CSS Introduction</a>
+            <a href="css_syntax.html">CSS Syntax</a>
+            <a href="css_selector.html">CSS Selector</a>
+            <a href="word-spacing-in-css-in-hindi.html">CSS Word Spacing</a>
+            <a href="css_content.html">CSS Content</a>
+            <a class="active" href="#">CSS !important</a>
+        </nav>
+    </aside>
+
+    <!----------- MAIN CONTENT -------------->
+    <article class="document">
+        <div>
+            <br><br><div class="prome_image_container cenImg"><img src="cssImage/css-important-property-in-hindi.png" alt="CSS !important Property in Hindi |"></div>
+            <h1>CSS !important Property in Hindi |</h1>
+            <p>अगर आपने एक ही element के कोई एक प्रकार के style को एक-से-ज्यादा अलग-अलग जगह style कर दिया है और आप चाहते है की उसमे से कोई एक विशेष style ही उस element पे लागु हो तो आप <span class="tagTex">!important</span> के उपयोग द्वारा यह कर सकते है |</p>
+            <p>उदाहरण के लिए - अगर आप कोई एक element के text के color को CSS मे कही red, कही green, कही yellow यानि अलग-अलग जगह अलग-अलग रंग दे देते है और आप चाहते है की element के text का color बस green दिखे तो आप <span class="tagTex">!important</span> का उपयोग द्वारा यह कर सकते है बस आपको जहाँ <span class="prop">color</span>: <span class="value">green</span>; है वहाँ पे <span class="prop">color</span>: <span class="value">green</span> <span class="tagTex">!important</span>; लिखना होगा |</p>
+        </div><br><hr class="lightHr">
+        <div>
+            <p class="syntax">Example :-</p>
+            <figure class="copyCodeBox">
+                <div class="copyCodeContent" id="html-file-code-content">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">title</span><span class="tag_sym">&gt;</span>CSS !important Property<span class="tag_sym">&lt;/</span><span class="tagTex">title</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLSix"><span class="selec">h1 {</span> <span class="prop">color</span>: <span class="value">red</span>; <span class="selecMin">}</span></p>
+                    <p class="mLSix"><span class="selec">.main {</span> <span class="prop">color</span>: <span class="value">green</span> <span class="tagTex">!important</span>; <span class="selecMin">}</span></p>
+                    <p class="mLSix"><span class="selec">.heading {</span> <span class="prop">color</span>: <span class="value">yellow</span>; <span class="selecMin">}</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;heading&#34;</span><span class="tag_sym">&gt;</span>Hellow, World!<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;heading main&#34;</span><span class="tag_sym">&gt;</span>Whats up<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;heading&#34;</span><span class="tag_sym">&gt;</span>meracode<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+                <div class="copyButtonContainer">
+                    <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>
+                    <div class="copyToCopied">copied</div>
+                </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container"><img src="cssImage/css-important-example.png" alt=""></div>
+        </div>
+    </article>
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.ul li::before {
+    content: "\2022";
+    color: #ff00b3;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block; 
+    position: relative;
+    top: 3.5px;
+    width: 0.8em;
+    margin-left: -1em;
+}
+@media screen and (min-width: 800px) { .css_syntax_img{ width: 580px; } }
+@media screen and (max-width: 799px) { .css_syntax_img{ width: 100%; } }
+.elem_selec::before { color: #ff00b3; font-size: large; display: inline-block; font-weight: bold;  width: 1.2em; }
+.big_elem_selec::before { color: #ff00b3; font-size: xx-large; display: inline-block;  width: 1.2em; }
+.first::before { content: "1.";}
+.second::before { content: "2.";}
+.third::before { content: "3.";}

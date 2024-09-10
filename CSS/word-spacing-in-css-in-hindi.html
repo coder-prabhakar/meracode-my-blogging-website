@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Spacing in CSS in Hindi | meracode </title>
+    <meta name="description" content="word-spacing property का उपयोग कोई वाक्य के प्रत्येक शब्द के बिच मे खाली स्थान बढ़ाने या घटाने के लिए यानि कोई sentence या paragraph के प्रत्येक word के बीचे मे कितना space रहेगा उसे बताने के लिए किया जाता है |"/>
+    <meta name="language" content="Hindi"/>
+    <meta name="author" content="Prabhakar Kumar"/>
+    <link rel="canonical" href="https://www.meracode.in/CSS/word-spacing-in-css-in-hindi.html"/>
+
+    <!-- ----- GOOGLE FONTS --------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------ WEBSITE LOGO ( FAVICON.IO ) ------>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!--------- HTML CSS FILE LINK ---------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/allCssStyle.css">
+
+</head>
+<body>
+
+    <!-------------- HEADER ----------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!---------- SIDE BAR ( NAV ) ----------->
+    <aside>
+        <nav>
+            <a href="css_introduction.html">CSS Introduction</a>
+            <a href="css_syntax.html">CSS Syntax</a>
+            <a href="css_selector.html">CSS Selector</a>
+            <a class="active" href="#">CSS Word Spacing</a>
+            <a href="css-important-property-in-hindi.html">CSS !important</a>
+            <a href="css_content.html">CSS Content</a>
+        </nav>
+    </aside>
+
+    <!----------- MAIN CONTENT -------------->
+    <article class="document">
+        <div>
+            <br><div class="prome_image_container cenImg"><img src="cssImage/word-spacing-in-css-in-hindi.png" alt="Word Spacing in CSS in Hindi"></div>
+            <h1>Word Spacing in CSS in Hindi |</h1>
+            <p>word-spacing property का उपयोग कोई वाक्य के प्रत्येक शब्द के बिच मे खाली स्थान बढ़ाने या घटाने के लिए यानि कोई sentence या paragraph के प्रत्येक word के बीचे मे कितना space रहेगा उसे बताने के लिए किया जाता है |</p>
+            <p class="texBacSec">Example के लिए मान लिजिये की आपने कोई element मे कुछ word का paragraph लिखा है आप चाहते है की जब वह paragraph browser मे दिखे यानि website मे दिखे तो उस paragraph के प्रत्येक word के बिच मे 60px का space हो तो आप css मे word-spacing property की सहायता से यह कर सकते है |</p>
+        </div><hr class="lightHr">
+        <div>
+            <h2>CSS word-spacing के उदाहरण |</h2>
+            <p>सबसे ऊपर मे एक web page (website) का image दिया हुआ है जिसमे आप देख सकते है की एक ही paragraph को दो बार लिखा गया है जिसमे से पहले वाले paragraph मे कोई ज्यादा(extra) space नहीं दिया गया है लेकिन दूसरा वाले paragraph मे प्रत्येक word के बिच 60px का space दिया गया है जिससे उसमे के सारे word एक-दुसरे से काफी दुरी पर दिख रहे है |</p>
+            <p class="texBacSec">ऊपर जो web page का image दिया गया है उसका code निचे दिया हुआ है जिसे देख कर आप word-spacing property के बारे मे अच्छे से समझ सकते है तथा इस code के निचे एक copy का button दिया गया है जिसपे आप click करके इस code को copy कर सकते है |</p>
+            <p class="texBacSec">निचे दिए हुए code मे आप देख पाएंगे की दो &lt;h1&gt; element है और उन दोनों मे एक ही text लिखा हुआ है तथा दुसरे वाले &lt;h1&gt; element का एक class name दिया गया है जो space है | &lt;style&gt; tag के अंदर दुसरे वाले &lt;h1&gt; element को उसके class name से select करके उसमे <b>word-spacing: 60px;</b> किया गया है जिससे उस &lt;h1&gt; element के प्रत्येक word के बिच मे 60px का space उत्पन्न हो जाएगा |</p>
+        </div>
+        <figure class="copyCodeBox">
+            <div class="copyCodeContent" id="html-file-code-content">
+                <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                <p class="selec mLSix">.space {</p>
+                <p class="mLNin"><span class="prop">word-spacing</span>: <span class="value">60px</span>;</p>
+                <p class="selecMin mLSix">}</p>
+                <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;space&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+            </div>
+            <div class="copyButtonContainer">
+                <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>
+                <div class="copyToCopied">copied</div>
+            </div>
+        </figure>
+    </article>
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

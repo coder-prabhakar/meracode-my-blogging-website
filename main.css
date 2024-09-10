@@ -1,0 +1,328 @@
+/***************************************** CSS used everywhere ********************************************/
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root{
+    --primary-color: #10f1ffd4;
+    --aside-color: #200aff0a;
+    --aside-font-size: 20px;
+    --web_name-color: #222149;
+    --h1-fontsize: 2.5em;
+    --h2-fontsize: 2em;
+    --h3-fontsize: 1.5em;
+}
+
+h1, h2, h3{ margin-bottom: 0px; }
+
+h1{
+    font-size: var(--h1-fontsize);
+    font-weight: lighter;
+}
+
+h2{
+    font-size: var(--h2-fontsize);
+    font-weight: lighter;
+}
+
+h3{
+    font-size: var(--h3-fontsize);
+    font-weight: 500;
+}
+
+h4{ font-size: large; color: #000000da; }
+
+p{
+    line-height: 30px;
+    word-spacing: 2px;
+    font-size: large;
+}
+
+.p{
+    line-height: 30px;
+    word-spacing: 2px;
+    font-size: large;
+} 
+
+ul li{
+    font-size: large; 
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.listBorderHr{ 
+    border-color: #f3f3f375;
+    margin: 0px;
+}
+
+.lightHr{
+    border-color: #ececec7e;
+}
+
+.marginHr{
+    margin: 50px 0px 20px 0px;
+    border-color: #ececec7e;
+}
+
+.deepHr{
+    margin: 70px 0px 10px 0px;
+    border-color: #ececec93;
+}
+
+
+/* Text Background secondry color */
+.texBacSec{
+    background-color: #10efff10;
+    padding: 10px;
+}
+
+/* Text Background Primary color */
+.texBacPri{
+    background-color: #10efff54;
+    padding: 20px;
+}
+
+
+/************ CODE COPY FUNCITON **************/
+.copyCodeBox{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #ececec;
+}
+.copyCodeContent{
+    background-color: white;
+    padding: 20px;
+}
+
+.copyCodeContent p{ margin: 0px auto; }
+
+.copyButtonContainer{
+    height: 65px;
+    margin: 20px 0px -10px 0px;
+}
+
+.copyToCopied, .copyCodeButton{
+    width: 150px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+
+.copyCodeButton:hover{ border: 1px solid #00b7ff; cursor: pointer; }
+
+.copyToCopied{ display: none; }
+
+
+/************ OUTPUT CODE **************/
+.outputCodeBox{
+    border-radius: 20px;
+    border: 4px solid #c5c5c5;
+}
+.output_text{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #717d7e;
+    border-radius: 20px;
+    border: 4px solid #c5c5c5;
+}
+
+.outputCodeBox div p{
+    font-size: 17px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.outputCodeBox div h2{
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    line-height: 150% !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+
+/********** PROME IMGAE CSS **********/
+.prome_image_container{
+    width: 100%;
+}
+.prome_image_container img{
+    width: 400px;
+    border: 1px solid #acabab;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+
+/*********** FIGURE **********/
+figure{
+    margin: 0px;
+}
+
+
+/*----------------------------- BODY & BODY SCROLL STYLE ---------------------------------*/
+body{
+    margin: 0px;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #ececec;
+    border-left: 1px solid #ccc;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #10b5ff;
+}
+
+/*----------------------------- HEADER ---------------------------------*/
+header{
+    background-color: var(--primary-color);
+    text-align: center;
+    border-bottom: 1px solid #d4d4d4;
+    color: var(--web_name-color);
+}
+
+/*----------------------------- WEBSITE NAME ---------------------------------*/
+.web_name{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+/*----------------------------- SIDE BAR ---------------------------------*/
+aside{
+    position: sticky;
+    top: 0px;
+    overflow: auto;
+}
+
+/*----------------------------- SIDE BAR - li ---------------------------------*/
+aside a{
+    text-decoration: none;
+    font-size: var(--aside-font-size);
+    color: #01000e;
+}
+
+
+/*----------------------------- MAIN CONTENT - (ARTICLE) ---------------------------------*/
+.document{ padding: 0px 30px 30px 30px; }
+
+
+/******************************* MIN-WIDTH: 750PX; *******************************/
+@media screen and (min-width: 750px){
+
+    /*------------ SIDE BAR -------------*/
+    aside{
+        width: 215px;
+        float: left;
+        background-color: var(--aside-color); 
+        border-right: 1px solid #1e0aff10;
+    }
+
+    /*------------ SIDE BAR - li -------------*/
+    aside a{
+        display: block;
+        line-height: 30px;
+        padding: 5px 0px 5px 10px;
+    }
+
+    aside nav a:hover{
+        color: var(--primary-color);
+    }
+
+    aside nav .active{
+        color: white;
+        background-color: var(--primary-color) !important;
+    }
+
+    /*------------ SIDE BAR SCROLL STYLE -------------*/
+    aside::-webkit-scrollbar{
+        width: 15px;
+    }
+    aside::-webkit-scrollbar-track{
+        background-color: #ececec;
+    }
+
+    aside::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: linear-gradient(#5ffc05, #00f8f8, #ff03c8);
+        border: 1px solid white;
+    }
+
+    /*------------ MAIN CONTENT - (ARTICLE) -------------*/
+    .document{ overflow: hidden; }
+}
+
+
+/******************************* MAX-WIDTH: 749PX; *******************************/
+@media screen and (max-width: 749px){
+
+    /*------------ SIDE BAR -------------*/
+    aside{
+        background-color: #cdfcfd;
+        width: 100%;
+        height: 60px;
+        padding-left: 20px;
+        white-space: nowrap;
+        border-bottom: 1px solid var(--primary-color);
+        z-index: 100;
+    }
+
+    /*------------ SIDE BAR - li -------------*/
+    aside a{
+        line-height: 60px;
+        margin: 0px 10px;
+        padding: 7px 12px;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: #79fafc;
+    }
+
+    aside nav .active, aside nav a:hover{
+        background-color: white;
+        color: var(--primary-color) !important;
+        border: 1px solid var(--primary-color) !important;
+        font-weight: bold;
+    }
+
+    /*------------ SIDE BAR SCROLL STYLE -------------*/
+    aside::-webkit-scrollbar{ height: 0px; }
+}
+
+
+/******************************* MAX-WIDTH: 500PX; *******************************/
+@media screen  and (max-width:500px){
+    :root{
+        --h1-fontsize: 2.0em;
+        --h2-fontsize: 1.6em;
+        --h3-fontsize: 1.2em;
+    }
+    
+    .deepHr{
+        margin: 30px 0px;
+    }
+
+    .document{ padding: 0px 10px 10px 10px; }
+
+    .texBacSec{ padding: 5px; }
+
+    .texBacPri{ padding: 10px; }
+
+    .copyCodeBox{ padding: 15px;   border-radius: 15px; }
+    
+    .copyCodeContent{ padding: 10px; }
+
+    .prome_image_container img{
+        width: 96%;
+        margin: 0px 2%;
+    }
+
+}
+
+

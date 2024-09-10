@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax in Hindi | CSS लिखने का तरीका in Hindi | meracode </title>
+    <meta name="description" content="अगर आपको web page के HTML document को style करना है तो आपको CSS syntax के बारे मे जानकारी होना आवश्यक है अर्थात HTML मे कुछ भी बदलाव करने के लिए आपको CSS syntax नियम का पालन करना होगा |"/>
+    <meta name="language" content="Hindi"/>
+    <meta name="author" content="Prabhakar Kumar"/>
+    <link rel="canonical" href="https://www.meracode.in/CSS/css_syntax.html"/>
+    
+    <!-- ----------------------- GOOGLE FONTS ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------------------------- WEBSITE LOGO ( FAVICON.IO ) ---------------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!------------------------- HTML CSS FILE LINK ---------------------------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/allCssStyle.css">
+    <link rel="stylesheet" href="style/css_syntax.css">
+
+</head>
+<body>
+
+    <!------------------------- HEADER ---------------------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!------------------------- SIDE BAR ( NAV ) ---------------------------->
+    <aside>
+        <nav>
+            <a href="css_introduction.html">CSS Introduction</a>
+            <a class="active" href="#">CSS Syntax</a>
+            <a href="css_selector.html">CSS Selector</a>
+            <a href="word-spacing-in-css-in-hindi.html">CSS Word Spacing</a>
+            <a href="css-important-property-in-hindi.html">CSS !important</a>
+            <a href="css_content.html">CSS Content</a>
+        </nav>
+    </aside>
+
+    <!-------------------------------- MAIN CONTENT - ( HTML INTRODUCTION ) -------------------------->
+    <section class="document">
+
+        <article>
+            <div>
+                <h1>CSS Syntax in Hindi |</h1>
+                <p>अगर आपको web page के HTML document को style करना है यानि website को css से style करना है तो आपको CSS syntax के बारे मे जानकारी होना आवश्यक है अर्थात HTML को style करने के लिए कुछ भी बदलाव करने के लिए आपको CSS syntax नियम का पालन करना होगा |</p>  
+            </div><br>
+            
+            <div>
+                <h2>CSS लिखने का तरीका हिंदी में |</h2>
+                <p>CSS में style करने के लिए नियम बने होते हैं | एक style नियम तीन भागों से बना होता है -</p>
+                <ul class="ul">
+                    <li><b>Selector</b> &nbsp;- selector उस HTML element को कहते है जिसे आप style करना चाहते हैं ।</li><br>
+                    <li><b>Property</b> &nbsp;- property का मतलब होता है की आप HTML element को style करने मे जो बदलाव करना चाहते है उस css property का नाम | जैसे- color , font, height, width etc |</li><br>
+                    <li><b>Value</b> &nbsp;- इसका मतलब property का value |</li>
+                </ul>
+                <br>
+                <p>अगर h1 element के text के color को green करना है तो css नियम का पालन करते हुए selector की जगह h1 होगा , property की जगह color होगा तथा value की जगह green होगा | निचे आप image मे देख सकते है |</p>
+                <br><img class="css_syntax_img" src="cssImage/css syntax.jpg" alt="CSS Syntax in Hindi | CSS लिखने का तरीका हिंदी में |">
+            </div>
+        </article>
+
+        <hr class="deepHr"> 
+        
+        <section>
+            <h2>Syntax of CSS</h2><br>
+            <figure class="copyCodeBox" style="padding: 15px !important;">
+                <div class="copyCodeContent" style="border-radius: 10px;">
+                    <p class="selec">h1 {</p>
+                    <p class="mLThi"><span class="prop">font-size</span>: <span class="value">40px</span>;</p>
+                    <p class="mLThi"><span class="prop">color</span>: <span class="value">orange</span>;</p>
+                    <p class="selecMin">}</p>
+                    <p class="selec">h3 {</p>
+                    <p class="mLThi"><span class="prop">font-size</span>: <span class="value">30px</span>;</p>
+                    <p class="mLThi"><span class="prop">color</span>: <span class="value">orangered</span>;</p>
+                    <p class="selecMin">}</p>
+                    <p class="selec">p {</p>
+                    <p class="mLThi"><span class="prop">font-size</span>: <span class="value">15px</span>;</p>
+                    <p class="mLThi"><span class="prop">color</span>: <span class="value">green</span>;</p>
+                    <p class="selecMin">}</p>
+                </div>
+            </figure>
+
+            <br><p class="texBacSec">निचे एक उदाहरण दिया गया है जिसमे ऊपर दिए हुए h1, h3 तथा p element के CSS syntax के उपयोग द्वारा एक web page को style किया गया है |</p><br>
+           
+            <p class="syntax">Example :-</p>
+            <figure class="copyCodeBox">
+                <div class="copyCodeContent" id="html-file-code-content">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="selec mLSix">h1 {</p>
+                    <p class="mLNin"><span class="prop">font-size</span>: <span class="value">40px</span>;</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">orange</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">h3 {</p>
+                    <p class="mLNin"><span class="prop">font-size</span>: <span class="value">30px</span>;</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">orangered</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">p {</p>
+                    <p class="mLNin"><span class="prop">font-size</span>: <span class="value">15px</span>;</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">green</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a h1 element.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h3</span><span class="tag_sym">&gt;</span>This is a h3 element.<span class="tag_sym">&lt;/</span><span class="tagTex">h3</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>This is a paragraph.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+                <div class="copyButtonContainer">
+                    <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>                      
+                    <div class="copyToCopied">copied</div>
+                </div>
+            </figure>
+            <br><p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/using css syntax.png" alt="using css syntax">
+            </div>
+        </section>
+
+        <hr class="deepHr"> <br>
+
+        <article>
+            <div>
+                <p>Style करने के लिए CSS कहाँ लिखे जायेंगे उसके आधार पर CSS के तीन प्रकार होते है |</p>
+                <ul>
+                    <li class="elem_selec first">Inline CSS</li>
+                    <li class="elem_selec second">Internal or Embedded CSS</li>
+                    <li class="elem_selec third">External CSS</li>
+                </ul>
+            </div><br>
+
+            <div>
+                <h2 class="big_elem_selec first">Inline CSS in Hindi</h2>
+                <p>Inline CSS का उपयोग एक अकेला element को style करने के लिए किया जाता है यानि जब आपको सिर्फ एक element को style करना होता है तब इसका उपयोग किया जाता है | Inline CSS style मे हमें  जिस element को style करना होता है उस element के अंदर ही  style attribute का उपयोग करके उसको style किया है | यह style element मे ही होता है तो इसे style करने के लिए Selector का उपयोग नहीं होता बस Property और Value का होता है |</p>
+                <h3>Inline CSS Example :-</h3>
+                <p>निचे एक उदाहरण दिया गया है जिसमे Inline CSS का प्रयोग किया गया है | दिए गए code मे एक h1 element मे उसके style attribute के उपयोग द्वारा उसके color को red तथा उसके text को center मे किया गया है |</p>
+                <figure class="copyCodeBox" style="padding: 15px !important;">
+                    <div class="copyCodeContent" style="border-radius: 10px;">
+                        <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">style</span><span>=</span><span class="att_value_color">&#34;color: red; text-align: center;&#34;</span><span class="tag_sym">&gt;</span>This is a h1 element.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    </div>
+                </figure>
+            </div><br>
+
+            <div>
+                <h2 class="big_elem_selec second">Internal or Embedded CSS in Hindi</h2>
+                <p>Internal CSS या Embedded CSS एक ही प्रकार के CSS को कहते है बस इनके दो अलग - अलग नाम है Internal या Embedded | Internal CSS का उपयोग एक अकेला web page को style करने के लिए किया जाता है यानि अगर हमें सिर्फ एक web page को style करना होता है तो उसके लिए Internal CSS का उपयोग किया जाता है | इसमें हमें जिस HTML page को style करना होता है उसके &lt;head&gt; section के अंदर &lt;style&gt; tag लगाकर उसमे web page को style करने वाले CSS के code को लिखते है |</p>
+                <h3>Internal CSS Example :-</h3>
+                <p>निचे एक उदाहरण दिया गया है जिसमे Internal or Embedded CSS का प्रयोग किया गया है | दिए गए code मे एक h1 element को &lt;head&gt; section के अंदर &lt;style&gt; tag मे उसको style किया गया है यानि उसके color को red तथा उसके text को center मे किया गया है |</p>
+                <figure class="copyCodeBox" style="padding: 15px !important;">
+                    <div class="copyCodeContent" style="border-radius: 10px;">
+                        <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="selec mLSix">h1 {</p>
+                            <p class="mLNin"><span class="prop">color</span>: <span class="value">red</span>;</p>
+                            <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a h1 element.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    </div>
+                </figure>
+            </div><br>
+
+            <div>
+                <div>
+                    <h2 class="big_elem_selec third">External CSS in Hindi</h2>
+                    <p>जब हम HTML page को style करने के लिए एक अलग file मे CSS लिखते है तो उसे External CSS कहते है | External CSS को CSS file मे लिखा जाता है तथा इस file को HTML page से लिंक कर दिया जाता है यानि HTML page से जोड़ दिया जाता है | CSS का उपयोग सबसे ज्यादा External CSS मे होता है तथा इसको CSS उपयोग करने का सबसे अच्छा तरीका माना जाता है | External CSS का उपयोग एक web page या एक से ज्यादा web page को style करने के लिए किया जा सकता है | </p>
+                </div>
+                <div>
+                    <h3>CSS File कैसे बनाये ?</h3>
+                    <p>CSS code को CSS file के अंदर लिखा जाता है | CSS का code लिखने के लिए आप कोई भी Text editor का उपयोग कर सकते है जैसे- Notepad , TextEdit आदि | आपने जिस file मे CSS का code लिखा है उस file को style.css के नाम से save करे आप चाहे तो अपने file का दूसरा नाम भी रख सकते है लेकिन ध्यान दे की आप जो भी नाम रखे उसके बाद मे .css लिखना आवश्यक है | जैसे - style.css , website.css , design.css आदि | </p>
+                    <p class="texBacPri"><b>Note:- </b> कोई भी text editor मे आप जो भी कुछ लिखकर save करेंगे तो वो एक साधारण text file बनेगा उसे CSS file बनाने के आप जो भी file का नाम रख रहे है उसके अंत मे .css लगाकर उस file को save करें |</p>
+                </div>
+                <div>
+                    <h3>CSS file को HTML file से कैसे जोड़े ?</h3>
+                    <p>CSS file को HTML से जोड़ने के लिए हम link tag का उपयोग करते है | जिसका syntax <b>&lt;link rel="stylesheet" href="style.css"&gt;</b> होता है जिसके href attribute मे हम css file के url को लिखते है | इसे हम HTML के &lt;head&gt; section के अंदर लिखते है |</p>
+                </div>
+                <div>
+                    <h3>External CSS Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे HTML code के &lt;head&gt; section के अंदर &lt;link&gt; tag का उपयोग करके External CSS को जोड़ा गया है | दिए गए उदाहरण मे link tag के अंदर href attribute मे css file का url दिया गया है जिसका नाम style.css है |</p>
+                    <figure class="copyCodeBox" style="padding: 15px !important;">
+                        <div class="copyCodeContent" style="border-radius: 10px;">
+                            <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                            <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">link</span> <span class="att_color">rel</span><span>=</span><span class="att_value_color">&#34;stylesheet&#34;</span> <span class="att_color">href</span><span>=</span><span class="att_value_color">&#34;style.css&#34;</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                            <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a h1 element.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                            <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+        </article>
+        
+    </section>
+    
+
+    <!----------------------------------------- SCRIPT ------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

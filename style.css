@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{ margin: 0px; }
+
+:root{
+    --primary-color: #10f1ffd4;
+    --navbar_name-color: #01292c;
+}
+
+ul li{
+    font-size: large; 
+    list-style-type: none;
+}
+
+a{ text-decoration: none; }
+
+
+/****************** All Section Property *******************/
+section:nth-child(even){ background-color: #fcfcfc; }
+
+section:nth-child(odd){ background-color: #eeeeee; }
+
+
+/****************** Header and Landing Page *******************/
+.web_header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid #00000010;
+}
+
+.web_name{
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 70px;
+    color: var(--primary-color);
+}
+
+.navbar_name a{
+    color: var(--navbar_name-color);
+}
+
+.landing_page{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.landing_page div img{
+    width: 70%;
+}
+
+.landing_page_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing_page_text article{
+    text-align: center;
+}
+
+.landing_page h1{
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+.landing_page p{
+    font-size: 20px;
+    line-height: 35px;
+    color: #290505;
+}
+
+
+/****************** Programming Language Section *******************/
+.programming_language_image img{
+    width: 220px;
+}
+
+.programming_language_text{
+    text-align: center;
+}
+
+.programming_language_text .article{
+    width: 310px;
+}
+
+.programming_language_text .paragraph{
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.programming_language_text button{
+    padding: 2px 12px;
+    border: none;
+    border-radius: 20px;
+}
+
+.programming_language_text button a{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 40px;
+    color: white;
+}
+
+.html_button{ background-color:#f26525; }
+.html_button:hover{ background-color: #E54B21; }
+
+.css_button{ background-color: #2965F1; }
+.css_button:hover{ background-color: #264DE4; }
+
+.javaScript_button{ background-color: #FFDA3E; }
+.javaScript_button:hover{ background-color: #D6BA32; }
+
+.bseb_button{ background-color: #37ff05; }
+.bseb_button:hover{ background-color: #073f00; }
+
+
+/****************** COPYRIGHT *******************/
+
+.copyright{
+    background-color:black;
+    color: white;
+    margin: 0px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*---------------------------------------------- 701 PX के बाद ----------------------------------------------------- */
+@media screen and (min-width:701px) {
+
+    /*-------- Header and Landing Page  ------*/
+    .web_header{
+        padding: 0px 70px 0px 50px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .web_nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .web_nav div{
+        margin: 0px 20px;
+    }
+
+    .navbar_name a{
+        font-size: 1.3em;
+        color: var(--navbar_name-color);
+    }
+
+    .navbar_name a:hover{
+        color: #021338;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .landing_page{
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .landing_page_text{
+        padding-right: 40px;
+    }
+
+    /*-------- Show Language Section  ------*/
+    .show_language_section{
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .programming_language_image{
+       display: flex;
+       align-items: center;
+    }
+
+    .programming_language_image:nth-child(odd){
+        justify-content: flex-end;
+        padding-right: 100px;
+    }
+
+    .programming_language_image:nth-child(even){
+        justify-content: flex-start;
+        padding-left: 100px;
+    }
+
+    .programming_language_text .headline{
+        font-size: 4em;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+    .programming_language_text{
+        display: flex;
+        align-items: center;
+     }
+ 
+     .programming_language_text:nth-child(odd){
+         justify-content: flex-end;
+     }
+ 
+     .programming_language_text:nth-child(even){
+         justify-content: flex-start;
+     }
+
+}
+
+
+/*---------------------------------------------- 700 PX के पहले ----------------------------------------------------- */
+@media screen  and (max-width:700px) {
+    
+    /*-------- Header and Landing Page  -----*/
+    .web_name{
+        width: 100%;
+        text-align: center;
+    }
+    .web_nav{
+        display: none;
+    }
+
+    .landing_page_text{
+        padding: 0px 10px;
+    }
+
+    /*-------- Show Language Section  -----*/
+    .show_language_section{
+        padding: 60px 0px;
+        display: flex;
+        align-items: center;
+    }
+    .show_language_section:nth-child(odd){
+        flex-direction: column;
+    }
+    .show_language_section:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+    .show_language_section div{
+        padding: 20px 0px;
+    }
+
+    .programming_language_text .headline{
+        font-size: 2.7em;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+}
+
+
+/*---------------------------------------------- 500 PX के पहले ----------------------------------------------------- */
+@media screen and (max-width:500px){
+    .landing_page div img{
+        width: 90%;
+    }
+
+    .landing_page_text{ margin-top: 30px; }
+
+    .landing_page h1{ font-size: 1.8em; }
+    
+    .landing_page p{
+        font-size: 19px;
+        line-height: 30px;
+    }
+}

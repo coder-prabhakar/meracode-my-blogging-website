@@ -1,0 +1,19 @@
+b{font-weight: lighter;color: #7e0303de;} strong{font-weight: lighter;color: #030fbdc5;}
+.ul li::before {
+    content: "\2022";
+    color: #ff00b3;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block; 
+    position: relative;
+    top: 2.5px;
+    width: 0.8em;
+}
+.lightHr{ border-color: #ff00b3; }
+.mLThi{padding-left: 30px;}
+.mB{ padding-bottom: 10px; }
+.mLSix{padding-left: 60px;}
+.btn{ background-color: #ff00b3; color: white; text-decoration: none; padding: 10px 13px; border-radius: 20px; }
+.btn:hover{ color: #ff00b3; font-weight: bold; background-color: white; border: 1px solid #ff00b3; box-shadow: 0px 0px 20px #ff00b3; }
+.btn_parent{ display: flex; flex-direction: column; align-items: center; border: 1px solid #ccc; padding: 0px 20px 20px 20px; border-radius: 20px; }
+@media screen and (min-width: 501px){ .center{ display: flex; justify-content: center; } }

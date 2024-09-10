@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector in Hindi - पूरी जानकारी | meracode</title>
+    <meta name="description" content="CSS selector का उपयोग उस HTML element को चुनने के लिए करते है जिसे आप CSS मे style करना चाहते हैं ।"/>
+    <meta name="language" content="Hindi"/>
+    <meta name="author" content="Prabhakar Kumar"/>
+    <link rel="canonical" href="https://www.meracode.in/CSS/css_selector.html"/>
+    
+    <!-- ----------------------- GOOGLE FONTS ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------------------------- WEBSITE LOGO ( FAVICON.IO ) ---------------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!------------------------- HTML CSS FILE LINK ---------------------------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/allCssStyle.css">
+
+    <style>
+        .elem_selec::before { color: #ff00b3; font-size: xx-large; display: inline-block;  width: 1.2em; }
+        .first::before { content: "1.";}
+        .second::before { content: "2.";}
+        .third::before { content: "3.";}
+        .fourth::before { content: "4.";}
+        .fifth::before { content: "5.";}
+        b{ font-weight: lighter; color: #00aeff; }
+        .unive_selec{  font-size: xx-large; color: #ffd001; }
+    </style>
+</head>
+<body>
+
+    <!------------------------- HEADER ---------------------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!------------------------- SIDE BAR ( NAV ) ---------------------------->
+    <aside>
+        <nav>
+            <a href="css_introduction.html">CSS Introduction</a>
+            <a href="css_syntax.html">CSS Syntax</a>
+            <a class="active" href="#">CSS Selector</a>
+            <a href="word-spacing-in-css-in-hindi.html">CSS Word Spacing</a>
+            <a href="css-important-property-in-hindi.html">CSS !important</a>
+            <a href="css_content.html">CSS Content</a>
+        </nav>
+    </aside>
+
+    <!-------------------------------- MAIN CONTENT - ( HTML INTRODUCTION ) -------------------------->
+    <section class="document">
+        
+        <article>
+            <section>
+                <h1>CSS Selector in Hindi - पूरी जानकारी |</h1>
+                <p>CSS selector का उपयोग उस HTML element को चुनने के लिए करते है जिसे आप CSS मे style करना चाहते हैं । CSS selector मे HTML element का चयन उसकी id, class, type, attribute आदि के आधार पर किया जाता हैं ।</p>
+            </section>
+            <br><hr class="lightHr">
+            <section>
+                <h2>CSS Selector के प्रकार |</h2>
+                <p>CSS में कई तरह के selector होते हैं । कुछ महत्वपूर्ण तथा ज्यादा उपयोग होने वाले selector के नाम निचे दिए गए है |</p>
+                <ul class="style_ul">
+                    <li>Element Selector</li>
+                    <li>Id Selector</li>
+                    <li>Class Selector</li>
+                    <li>Universal Selector</li>
+                    <li>Group Selector</li>
+                </ul>
+            </section>
+        </article>
+
+        <hr class="deepHr">
+
+        <section>
+            <article>
+                <section>
+                    <h2 class="elem_selec first">Element Selector in CSS in Hindi |</h2>
+                    <p>इसका मतलब होता है की CSS selector मे element को चुनने के लिए element के नाम का प्रयोग किया जाए जैसे - h1, p, div, span आदि |</p>
+                </section>
+                <hr class="lightHr">
+                <section>
+                    <h3>Element Selector Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे एक &lt;h1&gt; तथा दो &lt;p&gt; element को उनके element के नाम ( h1 , p ) द्वारा style किया गया है | <br> जिसमे &lt;h1&gt; element मे लिखे गए text के color को red त्तथा उसे center मे किया गया है और &lt;p&gt; element मे लिखे गए text के color को blue त्तथा उसे justify किया गया है |</p>
+                </section>
+            </article>
+            <figure class="copyCodeBox" style="padding: 20px !important;">
+                <div class="copyCodeContent" style="border-radius: 15px;">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="selec mLSix">h1 {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Red</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">p {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Blue</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">justify</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a use for heading.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat iure dignissimos saepe omnis. Unde quas vitae rem ipsam ullam?<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/using css selector.png" alt="using css selector">
+            </div>
+        </section>
+
+        <hr class="deepHr">
+
+        <section>
+            <article>
+                <section>
+                    <h2 class="elem_selec second">Id Selector in CSS in Hindi |</h2>
+                    <p>Id selector एक विशेष element को चुनने के लिए element की id attribute का उपयोग करता है ।</p>
+                    <p>एक id हमेशा एक page के अंदर अद्वितीय होती है यानि एक id एक page के अंदर एक ही element की हो सकती है इसलिए id selector का उपयोग अद्वितीय element को चुनने के लिए किया जाता है |</p>
+                    <p class="texBacSec">Id selector मे element को चुनने के लिए पहले # लिखे फिर उस element की id को लिखे जो आप style करना चाहते है |</p>
+                </section>
+                <hr class="lightHr">
+                <section>
+                    <h3>Id Selector Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे एक &lt;h1&gt; तथा दो &lt;p&gt; element को उनके id name ( <b>heading</b> , <b>para1</b> , <b>para2</b> ) के उपयोग द्वारा style किया गया है | <br> जिसमे id नाम <b>heading</b> वाले element मे लिखे गए text के color को red त्तथा उसे center मे किया गया है और id नाम <b>para1</b> तथा <b>para2</b> वाले element मे लिखे गए text के color को blue त्तथा उसे justify किया गया है |</p>
+                </section>
+            </article>
+            <figure class="copyCodeBox" style="padding: 20px !important;">
+                <div class="copyCodeContent" style="border-radius: 15px;">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="selec mLSix">#heading {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Red</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">#para1 {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Blue</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">justify</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">#para2 {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Blue</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">justify</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;heading&#34;</span><span class="tag_sym">&gt;</span>This is a use for heading.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;para1&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;para2&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat iure dignissimos saepe omnis. Unde quas vitae rem ipsam ullam?<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/using css selector.png" alt="using css selector">
+            </div>
+        </section>
+
+        <hr class="deepHr">
+
+        <section>
+            <article>
+                <section>
+                    <h2 class="elem_selec third">Class Selector in CSS in Hindi |</h2>
+                    <p>Class selector एक element को चुनने के लिए element के class attribute का उपयोग करता है ।</p>
+                    <p>Class selector मे element को चुनने के लिए पहले (.) लिखे फिर उस element के class का नाम लिखे जो आप style करना चाहते है |</p>
+                </section>
+                <hr class="lightHr">
+                <section>
+                    <h3>Class Selector Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे एक &lt;h1&gt; तथा दो &lt;p&gt; element को उनके class name ( <b>heading</b> , <b>paragraph</b> ) के उपयोग द्वारा style किया गया है | <br> जिसमे class नाम <b>heading</b> वाले element मे लिखे गए text के color को red त्तथा उसे center मे किया गया है और class नाम <b>paragraph</b> वाले element मे लिखे गए text के color को blue त्तथा उसे justify किया गया है |</p>
+                </section>
+            </article>
+            <figure class="copyCodeBox" style="padding: 20px !important;">
+                <div class="copyCodeContent" style="border-radius: 15px;">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="selec mLSix">.heading {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Red</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="selec mLSix">.paragraph {</p>
+                    <p class="mLNin"><span class="prop">color</span>: <span class="value">Blue</span>;</p>
+                    <p class="mLNin"><span class="prop">text-align</span>: <span class="value">justify</span>;</p>
+                    <p class="selecMin mLSix">}</p>
+                    <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;heading&#34;</span><span class="tag_sym">&gt;</span>This is a use for heading.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;paragraph&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">class</span><span>=</span><span class="att_value_color">&#34;paragraph&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat iure dignissimos saepe omnis. Unde quas vitae rem ipsam ullam?<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/using css selector.png" alt="using css selector">
+            </div>
+        </section>
+
+        <hr class="deepHr">
+
+        <section>
+            <article>
+                <section>
+                    <h2 class="elem_selec fourth">Universal Selector in CSS in Hindi |</h2>
+                    <p>Universal selector का उपयोग एक ही बार मे page पर के सभी HTML element को चुनने के लिए किया जाता है |</p>
+                    <p>इसका उपयोग करने के लिए selector की जगह * लिखा जाता है जिससे page के सभी element का चयन हो जाता है |</p>
+                </section>
+                <hr class="lightHr">
+                <section>
+                    <h3>Universal Selector Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे एक &lt;h1&gt; तथा दो &lt;p&gt; element को एक ही बार मे style करने के लिए universal selector <span class="unive_selec">*</span> का उपयोग किया गया है | <br> जिसमे सभी element के text के color को orangered त्तथा उसे center मे किया गया है |</p>
+                </section>
+            </article>
+            <figure class="copyCodeBox" style="padding: 20px !important;">
+                    <div class="copyCodeContent" style="border-radius: 15px;">
+                        <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="selec mLSix">* {</p>
+                        <p class="mLNin"><span class="prop">color</span>: <span class="value">orangered</span>;</p>
+                        <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a use for heading.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat iure dignissimos saepe omnis. Unde quas vitae rem ipsam ullam?<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/universal & group selector.png" alt="universal & group selector">
+            </div>
+        </section>
+
+        <hr class="deepHr">
+
+        <section>
+            <article>
+                <section>
+                    <h2 class="elem_selec fifth">Group Selector in CSS in Hindi |</h2>
+                    <p>Group selector का मतलब होता है की बहुत सारे element को उनके अलग - अलग element name , class name या id name को एक ही बार मे चयन करके style करना |</p>
+                    <p>Group selector मे बहुत सारे element को style करने के लिए selector मे अलग - अलग element, class, id के बिच मे (,) देना होता है |</p>
+                </section>
+                <hr class="lightHr">
+                <section>
+                    <h3>Group Selector Example :-</h3>
+                    <p>निचे एक उदाहरण दिया गया है जिसमे एक &lt;h1&gt; तथा दो &lt;p&gt; element को group selector के उपयोग द्वारा एक ही बार मे तीनो element को उनके element के नाम h1 , p को चयन करके style कर दिया गया है | <br> जिसमे सभी element के text के color को orangered त्तथा उसे center मे किया गया है |</p>
+                </section>
+            </article>
+            <figure class="copyCodeBox" style="padding: 20px !important;">
+                    <div class="copyCodeContent" style="border-radius: 15px;">
+                        <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="selec mLSix">h1 , p {</p>
+                        <p class="mLNin"><span class="prop">color</span>: <span class="value">orangered</span>;</p>
+                        <p class="mLNin"><span class="prop">text-align</span>: <span class="value">center</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span>This is a use for heading.<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat iure dignissimos saepe omnis. Unde quas vitae rem ipsam ullam?<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="cssImage/universal & group selector.png" alt="universal & group selector">
+            </div>
+        </section>
+        
+    </section>
+    
+
+    <!----------------------------------------- SCRIPT ------------------------------------------->
+    <script src="../main.js"></script>
+</body>
+</html>

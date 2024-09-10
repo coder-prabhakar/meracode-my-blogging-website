@@ -1,0 +1,14 @@
+h2{ margin-top: 40px; }
+*{ scroll-behavior: smooth; }
+.exa_img{ font-size: larger; font-weight: bolder; text-align: center; }
+@media screen and (min-width: 501px){
+    .image-chaurai img{ width: 80% !important; margin: 0px 10% !important; }
+    .prome_image_container{ display: flex; justify-content: center; }
+}
+.css_int_btn{ background-color: #ff00b3; color: white; text-decoration: none; padding: 10px 13px; border-radius: 20px; }
+.css_int_btn:hover{ color: #ff00b3; font-weight: bold; background-color: white; border: 1px solid #ff00b3; box-shadow: 0px 0px 20px #ff00b3; }
+.css_intro_btn_parent{ display: flex; flex-direction: column; align-items: center; border: 1px solid #ccc; padding: 0px 20px 20px 20px; border-radius: 20px; }
+.elem_selec::before { color: #ff00b3; font-size: large; display: inline-block; font-weight: bold;  width: 1.2em; }
+.first::before { content: "1.";}
+.second::before { content: "2.";}
+.third::before { content: "3.";}

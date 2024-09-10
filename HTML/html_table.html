@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table | meracode </title>
+    <meta name="description" content="HTML table tag का उपयोग data को पंक्ति (row) और स्तंभ (column) मे दिखाने के लिए होता है | एक पंक्ति (row) मे कई स्तंभ (column) हो सकते है |"/>
+
+    <!-- ----------------------- GOOGLE FONTS ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------------------------- WEBSITE LOGO ( FAVICON.IO ) ---------------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!------------------------- HTML CSS FILE LINK ---------------------------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/html.css">
+
+    <style>
+        .outputTable tr th, .outputTable tr td{ padding: 5px; }
+
+        .tableTagList{ border-collapse: collapse; }
+        .tableTagList, .tableTagList th, .tableTagList td{ border: 1px solid #10efff54; }
+        .tableTagList th{ text-align: left; }
+        .tableTagList th, .tableTagList td{ padding: 15px 20px 15px 10px; font-size: large; }
+    </style>
+</head>
+<body>
+
+    <!------------------------- HEADER ---------------------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!------------------------- SIDE BAR ( NAV ) ---------------------------->
+    <aside>
+        <nav>
+            <a href="html_introduction.html">HTML Introduction</a>
+            <a href="html_syntax.html">HTML Syntax</a>
+            <a href="html_element.html">HTML Element</a>
+            <a href="html_editor.html">HTML Editor</a>
+            <a href="html_text.html">HTML Text</a>
+            <a class="active" href="#">HTML Table</a>
+            <a href="html_id.html">HTML Id</a>
+        </nav>
+    </aside>
+
+    <!------------------------- MAIN CONTENT ---------------------------->
+    <section class="document">
+
+        <section>
+            <article>
+                <h1>HTML Table</h1>
+                <p>HTML table tag का उपयोग data को पंक्ति (row) और स्तंभ (column) मे दिखाने के लिए होता है | एक पंक्ति (row) मे कई स्तंभ (column) हो सकते है |</p>
+            </article>
+        </section>
+
+        <hr class="lightHr">
+
+        <section>
+            <p class="syntax">Example :-</p>
+            <figure class="copyCodeBox">
+                <div class="copyCodeContent" id="html-file-code-content">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p style="margin-left: 30px;"><span class="tag_sym">&lt;</span><span class="tagTex">table</span> <span class="att_color">border</span><span>=</span><span class="att_value_color">&#34;1&#34;</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span>Country<span class="tag_sym">&lt;/</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span>Capital<span class="tag_sym">&lt;/</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span>Currency<span class="tag_sym">&lt;/</span><span class="tagTex">th</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>India<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>New Delhi<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Indian Rupee<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Nepal<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Kathmandu<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Nepalese rupee<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Pakistan<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Islamabad<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Pakistani rupee<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Bangladesh<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Dhaka<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Taka<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Myanmar<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Nay Pyi Taw<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 90px;"><span class="tag_sym">&lt;</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span>Kyat<span class="tag_sym">&lt;/</span><span class="tagTex">td</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 60px;"><span class="tag_sym">&lt;/</span><span class="tagTex">tr</span><span class="tag_sym">&gt;</span></p>
+
+                    <p style="margin-left: 30px;"><span class="tag_sym">&lt;/</span><span class="tagTex">table</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+                <div class="copyButtonContainer">
+                    <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>                      
+                    <div class="copyToCopied">copied</div>
+                </div>
+            </figure>
+
+            <br>
+
+            <p class="syntax">Output :-</p>
+            <figure>
+                <table border="1" class="outputTable">
+                    <tr>
+                        <th>Country</th>
+                        <th>Capital</th>
+                        <th>Currency</th>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>New Delhi</td>
+                        <td>Indian Rupee</td>
+                    </tr>
+                    <tr>
+                        <td>Nepal</td>
+                        <td>Kathmandu</td>
+                        <td>Nepalese rupee</td>
+                    </tr>
+                    <tr>
+                        <td>Pakistan</td>
+                        <td>Islamabad</td>
+                        <td>Pakistani rupee</td>
+                    </tr>
+                    <tr>
+                        <td>Bangladesh</td>
+                        <td>Dhaka</td>
+                        <td>Taka</td>
+                    </tr>
+                    <tr>
+                        <td>Myanmar</td>
+                        <td>Nay Pyi Taw</td>
+                        <td>Kyat</td>
+                    </tr>
+                </table>
+            </figure>
+
+            <br><br>
+
+            <div class="texBacPri p"><b>Note :-</b> Table Element मे सभी प्रकार के HTML element शामिल हो सकते हैं यानि table element के अंदर HTML का कोई भी element हो सकता है | जैसे - text, images, lists, other tables, इत्यादि |</div>
+        </section>
+
+        <hr class="deepHr">
+
+        <section>
+            <h2>HTML Table Tags</h2>
+            <br>
+            <table class="tableTagList">
+                <tr class="texBacPri">
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>यह एक table को परिभाषित करता है ।</td>
+                </tr>
+                <tr class="texBacSec">
+                    <td>&lt;tr&gt;</td>
+                    <td>यह table में एक पंक्ति (row) को परिभाषित करता है ।</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>यह table में header cell को परिभाषित करता है ।
+                    </td>
+                </tr>
+                <tr class="texBacSec">
+                    <td>&lt;td&gt;</td>
+                    <td>यह table में एक cell को परिभाषित करता है ।</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>इसका उपयोग table का caption देने के लिए होता है |</td>
+                </tr>
+                <tr class="texBacSec">
+                    <td>&lt;thead&gt;</td>
+                    <td>इसका उपयोग table मे header content को एक समूह मे करने के लिए होता है |</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>इसका उपयोग table मे body content को एक समूह मे करने के लिए होता है |</td>
+                </tr>
+                <tr class="texBacSec">
+                    <td>&lt;tfoot&gt;</td>
+                    <td>इसका उपयोग table मे footer content को एक समूह मे करने के लिए होता है |</td>
+                </tr>
+            </table>
+        </section>
+
+
+    </section>
+
+
+    <!------------------------- SCRIPT ---------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

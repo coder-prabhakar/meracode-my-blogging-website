@@ -1,0 +1,16 @@
+.tag_sym{color: #7e0303de;font-size: 110%;} .tagTex{color: #030fbdc5;} .html_five_tag{color: #ff0000;font-size: 110%;}
+.selec{ color: #ffd001; } .selecMin{ color: #ffd001; padding-bottom: 15px; line-height: 20px !important; } .prop{ color: #008cff; } .value{ color: #d82b1ed8; }
+.att_color{ color: #fd0404bd; } .att_value_color{ color: #00aeff; }
+.syntax{ font-size: 23px; font-weight: bold; }
+.mLThi{ padding-left: 30px; }
+.mLSix{ padding-left: 60px; }
+.mLNin{ padding-left: 90px; }
+.mrg_btn{ padding-bottom: 10px; }
+.style_ul li::before { content: "\2022"; color: #ff00b3; font-weight: bold; font-size: x-large; display: inline-block;  width: 1em; margin-left: -1em; }
+.deepHr{ border-color: #3fbdf781; }
+.coHr{ border-color: #ff00ea44; }
+.myExcel p { display: grid; grid-template-columns: 80px 1fr; gap: 5px; border-bottom: 1px solid #cccbcb; padding: 10px 10px; margin: 0px; }
+.myExcel { border: 1px solid #bdbdbd; }
+.myExcel p:nth-child(1){ background-color: #3fbdf781 !important; font-weight: bolder; }
+.myExcel p:nth-child(odd){ background-color: #ecececa2; }
+.cenImg{ display: flex; justify-content: center; }

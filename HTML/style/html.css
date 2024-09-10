@@ -1,0 +1,31 @@
+.tag_sym{
+    color: #7e0303de;
+    font-size: 110%;
+}
+.tagTex{
+    color: #030fbdc5;
+}
+.html_five_tag{
+    color: #ff0000;
+    font-size: 110%;
+}
+.example_text{
+    text-align: top;
+}
+.att_color{ color: #fd0404bd; }
+.att_value_color{ color: #00aeff; }
+.syntax{
+    font-size: 25px;
+    font-weight: bold;
+}
+.ul li::before {
+    content: "\2022";
+    color: #ff00b3;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block; 
+    position: relative;
+    top: 2.5px;
+    width: 0.8em;
+}
+.coHr{ border-color: #ff00ea44; }

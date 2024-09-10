@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS content Property in Hindi | meracode</title>
+    <meta name="description" content="CSS मे content property का उपयोग web page पे सामग्री प्रदर्शीत होते समय कोई element के पहले या बाद मे कोई भी चीज (text, images, symbols, emojis etc.) प्रदर्शीत करवाने के लिए किया जाता है |"/>
+    <meta name="language" content="Hindi"/>
+    <meta name="author" content="Prabhakar Kumar"/>
+    <link rel="canonical" href="https://www.meracode.in/CSS/css_content.html"/>
+    
+    <!-- ----------------------- GOOGLE FONTS ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------------------------- WEBSITE LOGO ( FAVICON.IO ) ---------------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!------------------------- HTML CSS FILE LINK ---------------------------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/allCssStyle.css">
+    <style> .url{ color: #ffb004; } .urlCost{ color: #ff01c0; } </style>
+</head>
+<body>
+
+    <!------------------------- HEADER ---------------------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!------------------------- SIDE BAR ( NAV ) ---------------------------->
+    <aside>
+        <nav>
+            <a href="css_introduction.html">CSS Introduction</a>
+            <a href="css_syntax.html">CSS Syntax</a>
+            <a href="css_selector.html">CSS Selector</a>
+            <a href="word-spacing-in-css-in-hindi.html">CSS Word Spacing</a>
+            <a href="css-important-property-in-hindi.html">CSS !important</a>
+            <a class="active" href="#">CSS Content</a>
+        </nav>
+    </aside>
+
+    <!-------------------------------- MAIN CONTENT - ( HTML INTRODUCTION ) -------------------------->
+    <section class="document">
+        <article>
+            <div>
+                <br><br><div class="prome_image_container cenImg"><img src="cssImage/CSS-content-Property-in-Hindi.png" alt="CSS content Property in Hindi |"></div>
+                <h1>CSS content Property in Hindi |</h1>
+                <p>CSS मे content property का उपयोग web page पे सामग्री प्रदर्शीत होते समय कोई element के पहले या बाद मे कोई भी चीज (text, images, symbols, emojis etc.) प्रदर्शीत करवाने के लिए किया जाता है |<br><b>उदाहरण के लिए -</b> मान लीजिये HTML के किसी element मे आपने कोई text लिखा है और आप चाहते है की जब वह text दिखे web page पे उस समय उस text के पहले या बाद मे कुछ text, images, symbols, emojis आदि भी दिखे तो आप CSS के अंदर content property का उपयोग करके यह कर सकते है |</p>
+                <p class="texBacSec"><b>Note:-</b> कोई element के पहले या बाद मे कुछ भी प्रदर्शीत(display) करवाने के लिए आपको CSS मे उस element के जगह pseudo-element(::before & ::after) का उपयोग करना होगा |<br>जैसे - &nbsp; <span class="selec">p::after {</span> ........ <span class="selecMin">}</span> &nbsp; या &nbsp; <span class="selec">p::before {</span> ........ <span class="selecMin">}</span></p>
+            </div><hr class="lightHr coHr">
+            <div>
+                <h2>Content Property Values in Hindi |</h2>
+                <p>निचे कुछ content property मे उपयोग होने वाले अलग - अलग प्रकार के value के बारे मे जानकारी दि गयी है |</p>
+                <div class="myExcel">
+                    <p><span>Value</span> <span>Value के बारे मे जानकारी</span></p>
+                    <p><span>Text</span><span>आप content property के सहायता से web page मे text भी प्रदर्शीत करवा सकते है |<br>Syntax -&nbsp; <span class="selec">p::before {</span> <span class="prop">content</span>: <span class="value">"Student Name -"</span>; <span class="selecMin">}</span></span></p>
+                    <p><span>Number</span><span>आप content property के सहायता से web page मे Number भी प्रदर्शीत करवा सकते है |<br>Syntax -&nbsp; <span class="selec">p::after {</span> <span class="prop">content</span>: <span class="value">"100"</span>; <span class="selecMin">}</span></span></p>
+                    <p><span>Image</span><span>Image प्रदर्शीत करवाने के लिए आपको content property के value मे <span class="url">url</span><span class="urlCost">(</span><span class="urlCost">)</span> का उपयोग करके इसके अंदर image का url देना होगा |<br>Syntax -&nbsp; <span class="selec">p::after {</span> <span class="prop">content</span>: <span class="url">url</span><span class="urlCost">(</span><span class="value">Image/show-small-image.jpg</span><span class="urlCost">)</span>; <span class="selecMin">}</span></span></p>
+                    <p><span>symbol</span><span>आप इसका उपयोग करके symbol या emoji भी प्रदर्शीत करवा सकते है |<br>Syntax -&nbsp; <span class="selec">p::before {</span> <span class="prop">content</span>: <span class="value">"⛅"</span>; <span class="selecMin">}</span></span></p>
+                </div>
+            </div><br><hr class="lightHr">
+            <div>
+                <h2>Content Property Example in Hindi |</h2>
+                <p>ऊपर आपने जितने भी content property के value के बारे मे पढ़ा उन सबको अब हम example(उदाहरण) के माध्यम से समझेंगे |</p>
+                <p>निचे एक web page का code दिया गया है जिसमे ऊपर बताये गए content property के सारे value का इस्तेमाल किया गया |<br>आप चाहे तो इस code के निचे एक <b>copy</b> का button दिया गया है जिसपे आप click करके सारे code को copy कर सकते है और उसे अपने browser मे खोलकर देख सकते है |</p>
+                <figure class="copyCodeBox">
+                    <div class="copyCodeContent" id="html-file-code-content">
+                        <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="selec mLSix">#first::before {</p>
+                        <p class="mLNin"><span class="prop">content</span>: <span class="value">"Student Name -"</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="selec mLSix">#second::after {</p>
+                        <p class="mLNin"><span class="prop">content</span>: <span class="value">"100"</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="selec mLSix">#third::after {</p>
+                        <p class="mLNin"><span class="prop">content</span>: <span class="url">url</span><span class="urlCost">(</span><span class="value">Image/show-small-image.jpg</span><span class="urlCost">)</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="selec mLSix">#fourth::before {</p>
+                        <p class="mLNin"><span class="prop">content</span>: <span class="value">"⛅"</span>;</p>
+                        <p class="selecMin mLSix">}</p>
+                        <p class="mLThi"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;first&#34;</span><span class="tag_sym">&gt;</span>Prabhakar Kumar Singh<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;second&#34;</span><span class="tag_sym">&gt;</span>One Hundred<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;third&#34;</span><span class="tag_sym">&gt;</span>What is website<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mLThi"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;fourth&#34;</span><span class="tag_sym">&gt;</span>The Colour of Clouds<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                        <p class="mrg_btn"><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                        <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    </div>
+                    <div class="copyButtonContainer">
+                        <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>
+                        <div class="copyToCopied">copied</div>
+                    </div>
+                </figure>
+                <p class="texBacSec">ऊपर जो code दिया गया है उससे बना web page कैसा होगा उसका image निचे दिया गया है जिसे देख कर आप content property के बारे मे अच्छे से समझ पाएंगे की ये कैसे काम करता है |</p>
+                <div class="prome_image_container"><img src="cssImage/css-content-property-ke-udahran.png" alt="css content property ke udahran"></div>
+            </div>
+        </article>
+    </section>
+
+    <!----------------------------------------- SCRIPT ------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Id | meracode </title>
+
+    <!-- ----------------------- GOOGLE FONTS ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+    <!------------------------- WEBSITE LOGO ( FAVICON.IO ) ---------------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!------------------------- HTML CSS FILE LINK ---------------------------->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style/html.css">
+
+    <style>
+        .selector{ color: #ffc400; padding-left: 80px; }
+        .styCss{ margin-left: 120px; color: #474747; }
+        .deepHr{ border-color: #ff00ea71 !important; }
+        @media screen and (min-width: 501px){
+            .prome_image_container img{
+                width: 90% !important;
+                margin: 0px 5% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!------------------------- HEADER ---------------------------->
+    <header>
+        <span class="web_name">meracode</span>
+    </header>
+
+    <!------------------------- SIDE BAR ( NAV ) ---------------------------->
+    <aside>
+        <nav>
+            <a href="html_introduction.html">HTML Introduction</a>
+            <a href="html_syntax.html">HTML Syntax</a>
+            <a href="html_element.html">HTML Element</a>
+            <a href="html_editor.html">HTML Editor</a>
+            <a href="html_text.html">HTML Text</a>
+            <a href="html_table.html">HTML Table</a>
+            <a class="active" href="#">HTML Id</a>
+        </nav>
+    </aside>
+
+    <!------------------------- MAIN CONTENT ---------------------------->
+    <section class="document">
+
+        <article>
+            <h1>HTML Id</h1>
+            <p>HTML id attribute का उपयोग एक element का अद्वितीय id देने के लिए किया जाता है | HTML मे एक ही id वाले एक से अधिक element नहीं हो सकते है | Element को id एक विशेष पहचान देता है जिसका उपयोग CSS और JavaScript द्वारा कुछ कार्यों को करने के लिए किया जाता है ।</p>
+        </article>
+
+        <hr class="deepHr">
+
+        <section>
+            <h2>Using id attribute</h2>
+            <p class="texBacSec">JavaScript मे id द्वारा किसी element तक पहुचने और उसमे हेरफेर करने के लिए getElementById() method का उपयोग किया जाता है |</p>
+            <p class="texBacSec">CSS मे id द्वारा किसी element तक पहुचने और उसमे हेरफेर करने के लिए CSS के अंदर पहले # लिखे, उसके बाद id name लिखे फिर curly braces {} के अंदर CSS properties को यानि element मे जो बदलाव करना है वो लिखे |</p>
+            <p>निचे एक उदाहरण(example) दिया गया है जिसमे एक &lt;h2&gt; element तथा दो &lt;p&gt; element के id का उपयोग करके उनका रंग (color) बदला गया है |</p>
+            <p class="syntax">Example :-</p>
+            <figure class="copyCodeBox">
+                <div class="copyCodeContent" id="html-file-code-content">
+                    <p><span class="tag_sym">&lt;</span><span class="html_five_tag">!DOCTYPE html</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 40px;"><span class="tag_sym">&lt;</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p class="selector">#heading &#123;</p>
+                    <div class="styCss">background-color: black; <br> color: white; </div>
+                    <p class="selector">&#125;</p>
+                    <br>
+                    <p class="selector">#first_paragraph &#123;</p>
+                    <div class="styCss">color: orange;</div>
+                    <p class="selector">&#125;</p>
+                    <br>
+                    <p class="selector">#second_paragraph &#123;</p>
+                    <div class="styCss">color: green;</div>
+                    <p class="selector">&#125;</p>
+                    <p style="margin-left: 40px;"><span class="tag_sym">&lt;/</span><span class="tagTex">style</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">head</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 40px;"><span class="tag_sym">&lt;</span><span class="tagTex">h1</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;heading&#34;</span><span class="tag_sym">&gt;</span>This is a Heading<span class="tag_sym">&lt;/</span><span class="tagTex">h1</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 40px;"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;first_paragraph&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat minus esse tenetur cupiditate praesentium quia!<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p style="margin-left: 40px;"><span class="tag_sym">&lt;</span><span class="tagTex">p</span> <span class="att_color">id</span><span>=</span><span class="att_value_color">&#34;second_paragraph&#34;</span><span class="tag_sym">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem? Cumque pariatur quibusdam unde.<span class="tag_sym">&lt;/</span><span class="tagTex">p</span><span class="tag_sym">&gt;</span></p>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">body</span><span class="tag_sym">&gt;</span></p>
+                    <br>
+                    <p><span class="tag_sym">&lt;/</span><span class="tagTex">html</span><span class="tag_sym">&gt;</span></p>
+                </div>
+                <div class="copyButtonContainer">
+                    <div class="copyCodeButton" onclick="copyToCopiedTextFun(this.nextElementSibling)" data-clipboard-target="#html-file-code-content">copy</div>                      
+                    <div class="copyToCopied">copied</div>
+                </div>
+            </figure>
+            <p class="syntax">Output :-</p>
+            <div class="prome_image_container">
+                <img src="htmlImage/using class name.png" alt="using class name">
+            </div>
+        </section>
+
+    </section>
+
+
+    <!------------------------- SCRIPT ---------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
